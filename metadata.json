@@ -1,0 +1,6 @@
+{
+  "name": "PolisLab — AI Legislative & Society Simulator",
+  "description": "Draft hypothetical laws with AI, run multi-agent simulations of society across economic strata, and compare macroeconomic, fairness, and compliance outcomes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #0F172A;
+    background-color: #F8FAFC;
+  }
+
+  h1, h2, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono, .tabular-nums {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom precision slider styling */
+input[type="range"].precision-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"].precision-slider::-webkit-slider-runnable-track {
+  height: 5px;
+  border-radius: 2px;
+  background: #E2E8F0;
+}
+
+input[type="range"].precision-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0F172A;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.35);
+  margin-top: -5px;
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+input[type="range"].precision-slider:hover::-webkit-slider-thumb {
+  transform: scale(1.12);
+  background: #0284C7;
+}
+
+input[type="range"].precision-slider:focus-visible {
+  outline: 2px solid #0284C7;
+  outline-offset: 2px;
+}
+
